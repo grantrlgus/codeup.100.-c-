@@ -1,0 +1,12 @@
+#include <iostream> // cout 함수를 사용하기 위해 "iostream"(input/output stream 이라는 뜻.
+#include <string> // 
+using namespace std; //namespace=명칭공간, std = standard.  using namespace std; 이 문장은 표준 네임스페이스를 사용하겠다는 의미
+
+int main()
+{
+    string word;
+    cin >> word;
+    for (const auto str : word)
+        cout << "'" << str << "'" << endl;
+    return 0;
+}
